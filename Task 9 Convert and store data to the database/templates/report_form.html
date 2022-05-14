@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Statistic 
+{% endblock%}
+
+{% block body %}
+    <form method="get" action="/report/">
+        <div>
+            <label for="order">What order of presenting results would you like to see (ascending - asc, descending - desc)?</label>
+            <input type="submit" name="order" id="order" value="asc">
+            <input type="submit" name="order" id="order" value="desc">
+        </div>
+    </form>
+
+    <table class="numbered">
+        <thead>
+            <tr>
+                <th>Place </th>
+                <th>ID </th>
+                <th>Driver's name </th>
+                <th>Car </th>
+                <th>Start time </th>
+                <th>Finish time </th>
+                <th>Lap time </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for driver in the_result %} 
+                <tr>
+                    <td>{{ driver.place }}</td>
+                    <td>{{ driver.id }}</td>
+                    <td>{{ driver.name }}</td>
+                    <td>{{ driver.car }}</td>
+                    <td>{{ driver.start_time }}</td>
+                    <td>{{ driver.end_time }}</td>
+                    <td>{{ driver.delta_time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
+

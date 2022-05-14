@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+	margin: 15px;
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+#nav {
+	position: absolute;
+	top: 12px;
+	right: 15px;
+	list-style: none;
+	display: block;
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+#nav li {
+	display: inline;
+	background: #F08080;
+	border: none;
+	padding: 12px;
+	font-size: 15px;
+	font-weight: 300;
+	border-radius: 50px;
+}
+
+.description {
+	margin: 50px 30px 35px 30px;
+}
+
+#greeting {
+	font-size: 25px;
+	font-weight: 300;
+	margin: 70px 30px;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 200;
+	margin: 27px 30px;
+}
+
+h3 {
+	margin: 5px 30px 20px 30px;
+}
+
+label {
+	font-weight: bold;
+	float: left;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 50px 20px 20px 0px;
+}
+
+
+div input {
+	display: inline;
+	background: #F08080;
+	border: none;
+	padding: 11px;
+	font-size: 16px;
+	font-weight: 300;
+	border-radius: 50px;
+	color: #FAF0E6;
+	margin: 38px 15px 20px 10px;
+}
+
+
+input {
+	background: #5F9EA0;
+	color: #AFEEEE;
+	margin: 0px;
+	text-align: center;
+	letter-spacing: 1px;
+	border: none;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+input:hover {
+	text-decoration: underline;
+}
+
+table.numbered {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 95%;
+	counter-reset: rowNumber;
+	margin: 27px 30px;
+}
+
+table.numbered tbody tr {
+	counter-increment: rowNumber;
+}
+
+table.numbered tbody tr td:first-child::before {   
+	content: counter(rowNumber);   
+	min-width: 1em;   
+	margin-right: 0.5em;
+}
+
+table.numbered th {
+	border: 2px solid #F5F5F5;
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 5px;
+	background-color: #F08080;
+}
+
+table.numbered td {
+	border: 2px solid #F5F5F5;
+	padding: 5px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+
+table.unnumbered {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 95%;
+	margin: 27px 30px;
+}
+
+table.unnumbered th {
+	border: 2px solid #F5F5F5;
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 5px;
+	background-color: #F08080;
+}
+
+table.unnumbered td {
+	border: 2px solid #F5F5F5;
+	padding: 5px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+table.linked-table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 95%;
+	margin: 27px 15px;
+}
+
+table.linked-table th {
+	border: 2px solid #F5F5F5;
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 5px;
+	background-color: #F08080;
+}
+
+table.linked-table td {
+	border: 2px solid #F5F5F5;
+	padding: 5px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+body {
+	background: #5F9EA0;
+	color: #FAF0E6;
+}

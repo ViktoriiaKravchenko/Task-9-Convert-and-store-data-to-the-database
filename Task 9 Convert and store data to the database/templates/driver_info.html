@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Driver statistic
+{% endblock%}
+
+{% block body %}
+    <h2 class="description">Statistic about driver</h2>
+
+    <table class="unnumbered">
+        <thead>
+            <tr>
+                <th>ID </th>
+                <th>Driver's name </th>
+                <th>Car </th>
+                <th>Start time </th>
+                <th>Finish time </th>
+                <th>Lap time </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for driver in the_result %} 
+                <tr>
+                    <td>{{ driver.id }}</td>
+                    <td>{{ driver.name }}</td>
+                    <td>{{ driver.car }}</td>
+                    <td>{{ driver.start_time }}</td>
+                    <td>{{ driver.end_time }}</td>
+                    <td>{{ driver.delta_time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
